@@ -1,0 +1,361 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage[hmargin=2cm,vmargin=2cm]{geometry}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{url}
+\usepackage{etaremune}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{totcount}
+\usepackage{fontawesome5}
+\usepackage{graphicx} % Add this to the preamble for including images
+% Define a counter for the number of talks
+\newtotcounter{itemcounter}
+
+% Redefine \item to count the number of talks
+\let\olditem\item
+\renewcommand{\item}{\stepcounter{itemcounter}\olditem}
+
+% Command to reset the talk counter
+\newcommand{\resetitemcounter}{\setcounter{itemcounter}{0}}
+% \hypersetup{
+%   colorlinks,
+%   linkcolor={red!50!black},
+%   citecolor={blue!50!black},
+%   urlcolor={SeaGreen!90!black}}
+\definecolor{sectionblue}{RGB}{0,102,153}
+\definecolor{headerblue}{RGB}{41,61,93}
+
+\hypersetup{
+  colorlinks,
+  linkcolor={red!50!black},
+  citecolor={blue!50!black},
+  urlcolor={sectionblue}}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Arpit Arora}
+\chead{Curriculum Vitae}
+\rhead{\thepage}
+\thispagestyle{empty}
+%sectionfont{\color{}}
+
+\fancyfoot[C]{\textit{Last updated: \today}}
+
+\begin{document}
+
+
+\begin{center}
+\indent \textbf{\LARGE Arpit Arora -- Curriculum Vitae} \\
+\indent \rule{17cm}{0.4pt}\\
+\end{center}
+
+\begin{center}
+{\large
+  Postdoctoral Scholar $|$ \href{https://astro.washington.edu/}{Department of Astronomy},  \href{https://www.washington.edu/}{University of Washington}\\ 
+
+\begin{tabular}{c c c}
+\faGlobe\enspace \href{https://www.arpitarora.space}{arpitarora.space} &
+\faEnvelope\enspace \href{mailto:arora125@uw.edu}{\url{arora125@uw.edu}} &
+\faGithub\enspace \href{https://github.com/appy2806}{appy2806}
+\end{tabular}
+} \\ 
+% \textbf{Programming Languages}: 
+% \href{https://www.python.org/}{\raisebox{-1.5ex}{\includegraphics[height=2em]{Python_logo}}} % Python logo
+% \href{https://cplusplus.com/}{\raisebox{-1.5ex}{\includegraphics[height=2em]{Cpp_logo}}} % C++ logo
+\end{center}
+
+\section*{Research Interests}
+\vspace*{0mm}
+\begin{center}
+{\large 
+\begin{tabular}{c c c c}
+    Galaxy Dynamics & Galaxy Formation and Evolution  & Dark Matter & Stellar Streams 
+\end{tabular}
+}
+\end{center}
+
+\section*{Appointment}
+
+\indent Moore Foundation Postdoctoral Fellow, \href{https://dirac.astro.washington.edu/}{DiRAC/University of Washington} \hfill Sep 2024 -- present
+
+\noindent UW Data Science Postdoctoral Fellow, \href{https://escience.washington.edu/}{eScience Institute, University of Washington} \hfill March 2025 -- present
+
+\section*{Education}
+\textbf{Ph.D.} in Physics and Astronomy, \href{https://www.upenn.edu/}{University of Pennsylvania}, \hfill Philadelphia, PA \\
+\indent \textit{Advisor: \href{https://live-sas-physics.pantheon.sas.upenn.edu/people/standing-faculty/robyn-sanderson}{Prof. Robyn Sanderson}} \hfill 2019 -- 2024\\
+\indent \textit{Thesis:} \href{https://www.proquest.com/docview/3097956069?sourcetype=Dissertations%20&%20Theses}{Dark matter and disequilibrium at galactic scales}\\
+\textbf{B.S.} in Physics with highest distinction
+\href{https://twin-cities.umn.edu/}{University of Minnesota}, \hfill Minneapolis, MN\\
+\indent \textit{Advisor:
+\href{https://williams.umn.edu/}{Prof. Liliya L. R. Williams}} \hfill 2015--2019\\
+\textbf{B.S.} in Astrophysics with highest distinction
+\href{https://twin-cities.umn.edu/}{University of Minnesota}, \hfill Minneapolis, MN\\
+\indent \textit{Advisor:
+\href{https://williams.umn.edu/}{Prof. Liliya L. R. Williams}} \hfill 2015--2019 \\
+\indent \textit{Thesis:} \href{https://iopscience.iop.org/article/10.3847/1538-4357/ab7f2e/meta}{Power-law pseudo-phase-space density profiles of dark matter halos: A Fluke of Physics?}
+
+\section*{Scholarships and Awards}
+
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+\item Heising-Simons Scholars for IAU conference in Cape Town \hfill 2024
+\item \href{https://cse.umn.edu/physics/laverne-ted-jones-astrophysics-scholarship#:~:text=This%20scholarship%20provides%20financial%20assistance,School%20of%20Physics%20and%20Astronomy.}{Laverne \& Ted Jones Scholarship} for Academic Excellence, Univesity of Minnesota \hfill 2017, 2018 
+% \item \href{https://cse.umn.edu/physics/laverne-ted-jones-astrophysics-scholarship#:~:text=This%20scholarship%20provides%20financial%20assistance,School%20of%20Physics%20and%20Astronomy.}{Laverne \& Ted Jones Scholarship} for Academic Excellence, Univesity of Minnesota \hfill 2017 -- 2018 
+% \indent \textit{(Awarded to one student for excellent academic performance. Repeated Winner.)}
+\item \href{https://cse.umn.edu/physics/hazel-v-swanson-scholarship#:~:text=Hazel%20V.-,Swanson%20Scholarship,School%20of%20Physics%20and%20Astronomy.}{Swanson Scholarship} for promising student in Astrophysics, University of Minnesota \hfill 2016
+\item \href{https://ugresearch.umn.edu/opportunities/urop}{UROP} Research scholarship for first year undergraduates, University of Minnesota \hfill 2015 -- 2016 
+\item \href{https://isss.umn.edu/programs/international-buddy-program}{International Buddy Program}, International student leader, University of Minnesota \hfill 2017 -- 2019 \\ \indent \textit{Awarded position with scholarship funds under ISSS. Tasked with building peer-to-peer/globally minded community programs involving 500+ students yearly.} 
+\item \href{https://isss.umn.edu/programs/culture-corps}{Culture Corps}, Student leadership Scholarship offered by ISSS, University of Minnesota \hfill 2015 -- 2019 \\ \indent \textit{Developed/organized leadership programs focused on international students developing projects and initiatives that bring global perspectives to the campus.}
+\end{itemize}
+%SpaceArt scholarship, Bogot\'a Planetarium: For developing art and science material for children, 2014. \\
+%Best research project at the Gaia Summer school, UNAM, Mexico City, 2013.
+%2010 - $1^{st}$ Place Maloka (interactive Science Museum) contest to design a didactical physics experiment.\\
+
+
+\section*{Mentoring Experience}
+
+Total students advised or co-advised 10; 1 Ph.D., 2 postbac, 5 undergraduates, 3 high school.
+
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+  \item Jack Kohm (Graduate student at UW) \hfill Oct 2025 -- present \\ \indent \textit{Advising on Jack's Ph.D. thesis projects.}
+  \item Gray Thoron (Graduate student at UW) \hfill Oct 2024 -- present \\ \indent \textit{Advising on Gray's Ph.D. thesis projects.}
+  \item Videep Reddy (Undergraduate research at UW) \hfill Dec 2024 -- present
+  \item Abdelaziz Hussein (Graduate student at MIT) \hfill 2022 -- 2024 \\ \indent  \textit{Advising on one Ph.D. project on running SIDM simulations.}  
+\item Lily Joseph (Postbaccalaureate at UPenn) \hfill 2020 -- 2023 \\ \indent \textit{Thesis \& postbac project on surface of sections in MW. Pending journal submission.}
+  \item Jasjeev Singh (Undergraduate thesis at UPenn) \hfill 2023 -- 2025      
+  \item Emily Bregou (Undergraduate research \& Postbaccalaureate at UPenn) \hfill 2022 -- 2023      
+\item Christopher Regan (Undergraduate at UPenn) \hfill 2020 -- 2021 \\ \indent \textit{Thesis \& a published paper on time-evolving potential models.} 
+\item \href{https://web.sas.upenn.edu/penn-lens/welcome-to-penn-lens/}{Penn Laboratory Experiences in Natural Sciences} (grade 11-12 students) \hfill Summer 2022, 2023 \\ \indent \textit{3 student mentees from 2 different local schools with different academic/cultural background}   
+\end{itemize}
+
+\section*{Teaching Experience}
+
+\subsection*{Guest Lectures}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  % \renewcommand\labelitemi{$\cdot$}
+  \item \textbf{University of Washington} \\
+        ASTR 102: Introduction to Astronomy \hfill Fall 2025 \\
+        ASTR 511: Galactic Structure and Dynamics \hfill Winter 2025
+  \item \textbf{University of Pennsylvania} \\
+        PHYS 522: Intro to Particle Physics \hfill Spring 2024, 2022 \\
+        PHYS 533: Topics in Cosmology: Galactic Dynamics with Gaia \hfill Spring 2023 \\
+        PHYS 150: Principles of Physics I: Mechanics and Wave Motion \hfill Fall 2020, 2021
+  \item \textbf{University of Minnesota} \\
+        AST 2001: Fundamental Astrophysics \hfill Spring 2018, 2019\\
+        PHY 1301: Physics I for Science \& Engineering \hfill Fall 2018
+\end{itemize}
+
+\subsection*{Teaching Assistantships}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  % \renewcommand\labelitemi{$\cdot$}
+  \item \textbf{University of Pennsylvania} \\
+    PHYS 522: Intro to Particle Physics\hfill Spring 2021, 2022, 2024 \\
+    PHYS 533: Galactic Dynamics with Gaia \hfill Spring 2023 \\
+    PHYS 526: Astrophysical Radiation \hfill Fall 2022 \\
+    PHYS 016: Energy, Oil, \& Global Warming \hfill Fall 2023 \\
+    PHYS 150: Principles of Physics I: Mechanics and Wave Motion \hfill Fall 2020, 2021 \\
+    PHYS 101-102 Laboratory\hfill Summer 2020B, 2021A, 2021B
+  
+  \item \textbf{University of Minnesota} \\
+    PHY 1301: Physics I for Science \& Engineering \hfill Fall 2018, Spring 2019 \\
+    AST 2001: Intro to Modern Astrophysics \hfill Spring 2017, Spring 2018, Spring 2019
+\end{itemize}
+
+\subsection*{Grading and Tutoring}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  % \renewcommand\labelitemi{$\cdot$}
+  \item \textbf{University of Pennsylvania} \\
+    ASTR 212: Intro to Astrophysics II \hfill Spring 2020 \\
+    ASTR 007: The Big Bang and Beyond \hfill Fall 2019
+  \item \textbf{University of Minnesota} \\
+    PHY 1302: Physics II for Science \& Engineering \hfill Fall 2017 \\
+    Certified Tutor, PLC Smart Learning Commons \hfill 2017--2018
+    \begin{quote}\itshape
+    Tutored undergraduate students in calculus, introductory physics, and astronomy.
+    \end{quote}
+\end{itemize}
+
+\section*{Service to the community \& Outreach}
+\begin{itemize}
+    \setlength\itemsep{0.0em}
+    \renewcommand\labelitemi{$\cdot$}
+    \item Division of Dynamical Astronomy, AAS, \href{https://dda.aas.org/about/leadership}{Committee Member} \hfill June 2025 -- June 2028
+    \item \href{https://www.npr.org/2025/07/02/1255100756/milky-way-galaxy-andromeda-collide-merge-space}{Speaker on NPR \textit{Short Wave}}: Could the Milky Way be headed for a collision? \hfill June 2025
+    \item DiRAC, University of Washington, Seminar committee \hfill Oct 2024 -- present
+    \item Referee for APJ, MNRAS, OJA \hfill 2023 -- present
+    \item Classroom astronomer \hfill 2022 -- present \\ \indent \textit{Led lectures/Q\&A sessions for multiple high school astronomy classes.} 
+    \item \href{https://aas.org/meetings/dda53}{DDA 53$^{rd}$} volunteer LOC \hfill May 2022 \\ \indent \textit{Ranked/sorted and selected abstract submissions in Galaxy dynamics.}
+\end{itemize}
+
+\section*{Publications list}
+\noindent \href{https://scixplorer.org/search?p=1&q=docs%28library%2FFoo0PCcyQRuwOWcZNDtIlw%29&sort=date+desc&d=astrophysics}{ADS/SciX},
+\href{https://orcid.org/0000-0002-8354-7356}{ORCID},
+\href{https://scholar.google.com/citations?user=sizUVx8AAAAJ&hl=en&oi=ao}{Google Scholar}\\
+Total: 25 -- refereed: 21 -- primary author: 10 -- citations : 504 (as of \today) 
+
+\subsection*{Primary author}
+
+\textit{* indicates work led by a student I advised or co-advised.}
+
+\begin{etaremune}
+
+\item Silverman M.*, Hussein, A.*, \textbf{Arora, A.}, Kaplinghat, M., Lisanti, M., Necib, L., and Sanderson, R. E., in prep. Gravothermal Collapse in low-mass SIDM halos with self-interacting dark matter. Draft available on request.
+
+\item  Mansfield, M. W.*, Sanderson, R. E., Hey, D., Huber, D., \textbf{Arora, A.}, Cunningham E. C., and Panithanpaisal, N., 2026. Kinematic Signatures in the Stellar Halo from Cosmological Encounters between the Milky Way and its Clouds. \textit{The Astrophysical Journal submitted}, arxiv:2602.03528.  
+
+\item Darragh-Ford, E.*, Garavito-Camargo, N., \textbf{Arora, A.}, Wechsler, R. H., Mansfield, P., Besla, G., et. al. 2025. Shaping the Milky Way. II. The dark matter halo's response to the LMC's passage in a cosmological context. \textit{The Astrophysical Journal accepted}, arXiv:2511.02031.
+
+\item \textbf{Arora, A.}, Garavito-Camargo, N., Sanderson, R. E., Weinberg, M. D., Petersen, M. S., et. al., 2025. Shaping the Milky Way: The interplay of mergers and cosmic filaments. \textit{The Astrophysical Journal}, 988(1), p.190.
+
+\item \textbf{Arora, A.}, Sanderson, R., Regan, C., Garavito-Camargo, N., Bregou, E., Panithanpaisal, N., Wetzel, A., Cunningham, E.C., Loebman, S.R., Dropulic, A. and Shipp, N., 2024. Efficient and accurate force replay in cosmological-baryonic simulations. \textit{The Astrophysical Journal}, 977(1), p.23.
+
+\item  \textbf{Arora, A.}, Sanderson, R. E., Chakrabarti, S., Wetzel, A., Donlon, T., Horta, D., Loebman, S. R., Necib, L., and Oeur, M., 2024. The imprint of dark matter on the Galactic acceleration field. \textit{The Astrophysical Journal}, 974(2), p.223.
+
+\item Ansar, S., Pearson, S., Sanderson, R. E., \textbf{Arora, A.}, Hopkins, P. F., Wetzel, A., Cunningham, E. C., Quinn, J. 2024. Bar formation and destruction in the FIRE-2 simulations. \textit{The Astrophysical Journal}, 978(1), p.37.
+
+\item \textbf{Arora, A.}, Garavito-Camargo, N., Sanderson, R. E., Cunningham, E. C., Wetzel, A., Panithanpaisal, N., Barry, M. 2023. LMC-driven anisotropic boosts in stream--subhalo interactions. \textit{The Astrophysical Journal}, 974(2), p.286. 
+
+\item \textbf{Arora, A.}, Sanderson, R.E., Panithanpaisal, N., Cunningham, E.C., Wetzel, A. and Garavito-Camargo, N., 2022. On the stability of tidal streams in action space. \textit{The Astrophysical Journal}, 939(1), p.2. 
+  
+\item \textbf{Arora, A.} and Williams, L.L., 2020. Power-law Pseudo-phase-space Density Profiles of Dark Matter Halos: A Fluke of Physics?. \textit{The Astrophysical Journal}, 893(1), p.53. 
+
+
+\end{etaremune}
+
+
+\subsection*{N$^{th}$ author}
+
+\begin{etaremune}
+
+\item Panithanpaisal, N., Sanderson, R. E., Rodriguez, C. L., Starkenburg, T., Pearson, S., Bonaca, A., Hopkins, P. F., Cook, B. T., \textbf{Arora, A.}, Weatherford, N. C. 2026. Breaking Down the \textsf{CosmoGEMS}: Toward Modeling and Understanding Globular Cluster Stellar Streams in a Fully Cosmological Context. \textit{The Astrophysical Journal}, ApJ 997(1), p.182.
+
+\item Quinn, J., Loebman, S. R., Daniel, K., Silva, L.B., Wetzel, A., Debattista, V., \textbf{Arora, A.}, McCluskey, F., Masoumi, D., Bailin, J. 2026. Spiral Structure Properties, Dynamics, and Evolution in MW-mass Galaxy Simulations. \textit{The Astrophysical Journal}, ApJ 997(2), p. 29.
+
+\item Hunt, J. A. S., Petersen, M. S., Weinberg, M. D., Johnston, K. V., Bernet, M., Daniel, K. J., Hyman, S. Ó., Price-Whelan, A. M., \textbf{Arora, A.}, the EXP Collaboration. 2025. The dark matter wake of a galactic bar revealed by multichannel Singular Spectral Analysis. \textit{Monthly Notices of the Royal Astronomical Society}, staf2118.
+
+\item Wetzel, A., Samuel, J., Gandhi, P.J., Ponnada, S.B., Su, K.Y., \textbf{Arora, A.}, Angles-Alcazar, D., Hayward, C.C., Sanderson, R.E., Feldmann, R. and Cochrane, R., et. al., 2025. Second public data release of the FIRE-2 cosmological zoom-in simulations of galaxy formation. arXiv preprint arXiv:2508.06608.
+
+
+\item Ouer, M., Loebman, S. R., Price-Whelan, A.M., \textbf{Arora, A.}, Necib, L., and Horta, D., 2025. OTI on FIRE: Testing the Efficacy of Orbital Torus Imaging to Recover the Galactic Potential. \textit{The Astrophysical Journal}, ApJ 993(1), p.29.
+
+\item Shipp N., Riley A. H., Simpson C. M., Bieri R., Necib L., \textbf{Arora A.}, Fragkoudi F., Gómez F. A., Grand R. J. J., Marinacci F., 2024. Auriga Streams II: orbital properties of tidally disrupting satellites of Milky Way-mass galaxies. \textit{Monthly Notices of the Royal Astronomical Society accepted}, 542(2), pp.1109-1124.
+
+\item Lucey M., Sanderson R. E., Horta D., Kundu A, Hopkins P.F., \textbf{Arora A.}, Singh J., Panithanpaisal N., 2024. Cosmological predictions for minor axis stellar density profiles in the inner regions of Milky Way-mass galaxies. \textit{The Astrophysical Journal}, 982(2), 87. 
+
+\item Donlon, T., Newberg, H.J., Sanderson, R., Bregou, E., Horta, D.,\textbf{Arora, A.} and Panithanpaisal, N.J., 2023. The Debris of the ``Last Major Merger'' is Dynamically Young. \textit{`Monthly Notices of the Royal Astronomical Society}, 531(1), pp.1422-1439.
+
+
+\item Horta, D., Cunningham, E.C., Sanderson, R., Johnston, K.V., Deason, A., Wetzel, A., McCluskey, F., Garavito-Camargo, N., Necib, L., Faucher-Giguère, C.A., \textbf{Arora, A.} and Gandhi, P.J., 2023. The proto-galaxy of Milky Way-mass haloes in the FIRE simulations. \textit{Monthly Notices of the Royal Astronomical Society}, 527(4), pp.9810-9825. 
+
+\item Garavito-Camargo, N., Price-Whelan, A.M.,  Cunningham, E.C., Samuel, J., Patel, E., Wetzel, A., Johnston, K.V., \textbf{Arora, A.}, Sanderson, R. and Garrison, L., 2023. LMC-mass satellite galaxies inducing ‘apparent’ co-rotation motions in Milky Way-like galaxies in
+FIRE. \textit{The Astrophysical Journal}, 975(1), p.100.
+
+\item Barry, M., Wetzel, A., Chapman, S., Samuel, J., Sanderson, R. and \textbf{Arora, A.}, 2023. The dark side of FIRE: predicting the population of dark matter subhaloes around Milky Way-mass galaxies. \textit{Monthly Notices of the Royal Astronomical Society}, 523(1), pp.428-440. 
+
+\item Wetzel, A., Hayward, C.C., Sanderson, R.E., Ma, X., Anglés-Alcázar, D., Feldmann, R., Chan, T.K., El-Badry, K., Wheeler, C., Garrison-Kimmel, S., Nikakhtar, F., Panithanpaisal, N., \textbf{Arora, A.}, Gurvich, A.B., Samuel, J., Sameie, O., Pandya, V., Hafen, Z., Hummels, C., Loebman, S., Boylan-Kolchin, M., Bullock, J.S., Faucher-Giguere, C.-A., Keres, D. and Hopkins, P.F, 2023. Public data release of the FIRE-2 cosmological zoom-in simulations of galaxy formation. \textit{The Astrophysical Journal Supplement Series}, 265(2), p.44.
+
+
+\item Horta, D., Cunningham, E.C., Sanderson, R.E., Johnston, K.V., Panithanpaisal, N., \textbf{Arora, A.}, Necib, L., Wetzel, A., Bailin, J. and Faucher-Giguère, C.A., 2023. The Observable Properties of Galaxy Accretion Events in Milky Way–like Galaxies in the FIRE-2 Cosmological Simulations. \textit{The Astrophysical Journal}, 943(2), p.158
+
+\item Baptista, J., Sanderson, R., Huber, D., Wetzel, A., Sameie, O., Boylan-Kolchin, M., Bailin, J., Hopkins, P.F., Faucher-Giguere, C.A., Chakrabarti, S. and Vargya, D., Panithanpaisal, N., \textbf{Arora, A.} and Cunningham, E., 2022. Orientations of DM Halos in FIRE-2 Milky Way-mass Galaxies. \textit{The Astrophysical Journal}, 958(1), p.44.
+
+\item Panithanpaisal, N., Sanderson, R.E., \textbf{Arora, A.}, Cunningham, E.C. and Baptista, J., 2022. Constraining the Tilt of the Milky Way's Dark Matter Halo with the Sagittarius Stream. \textit{The Astrophysical Journal in revision},  arXiv:2210.14983.
+
+\end{etaremune}
+
+
+\section*{Scientific Talks, Conferences \& Workshops:}
+\resetitemcounter
+% Automatically display the total count
+\noindent \total{itemcounter} Total: 14 Invited (denoted by \dag), 3 posters. 25 in North America, 5 in Europe, 1 in Africa\\
+
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+  \item Yale University, Galaxies Seminar, CT, USA$^\dag$ \hfill April 2026
+  \item University of Michigan, Galaxies seminar, MI, USA$^\dag$ \hfill Nov 2025  
+  \item Spec-S5 Dark Matter Meeting 2025, IL, USA \hfill Oct 2025
+  \item Institute of Cosmos Science, University of Barcelona, seminar talk, Barcelona, Spain$^\dag$ \hfill Jun 2025
+  \item Small-Scale Structure of the Universe and SIDM, invited talk, Valencia, Spain$^\dag$ \hfill Jun 2025
+  \item LIRA, Observatoire de Paris, PSL Seminar talk, Paris, France$^\dag$ \hfill Jun 2025
+  \item \href{https://www.cmu.edu/cosmology/events/gravity2025.html}{Gravity in the local Group}, contributed talk, Carnegie Mellon University, PA, USA \hfill Jun 2025
+  \item DREAMS collaboration conference, invited talk, CCA, NY, USA$^\dag$ \hfill May 2025
+  \item University of Washington, Seattle, Astronomy colloquium, WA, USA$^\dag$ \hfill Mar 2025
+  \item University of Alabama, Huntsville, Astronomy colloquium, AL, USA$^\dag$ \hfill Feb 2025  
+  \item IAU General Assembly 2024, research talk, Cape Town, SA \hfill Aug 2024
+  \item \href{https://events.simonsfoundation.org/event/1f18ba51-d6da-414f-b492-9590f29ad048/summary}{XMC Workshop}, contributed talk, NY, USA \hfill Feb 2024
+  \item \href{https://aas.org/meetings/aas243}{243$^{rd}$ American Astronomical Society meeting}, dissertation talk, Louisiana, USA \hfill Jan 2024 
+  \item \href{https://conference.ipac.caltech.edu/milkywaysurveys/}{Surveying the Milky Way}, poster, California, USA \hfill Oct 2023
+  \item CCA, PACMAN seminar, NY, USA$^\dag$ \hfill Oct 2023
+  \item MIT Kavli Institute Lunch talk, Boston, MA, USA$^\dag$ \hfill Oct 2023
+  \item University of Michighan, Astronomy seminar, MI, USA$^\dag$ \hfill Oct 2023
+  \item Simulating Beyond CDM workshop, NY, USA \hfill Aug 2023
+  \item Galactic Frontiers: Dwarf Galaxies in the Local Volume and Beyond, \textit{attendee}, NY, USA \hfill Jul 2023
+  \item \href{https://agenda.infn.it/event/33897/}{Self Interacting Dark Matter: Models, Simulations and Signals}, workshop talk, Pollica, Italy \hfill Jun 2023
+  \item DESC stellar stream meeting, virtual talk$^\dag$ \hfill Jun 2023
+  \item \href{https://aas.org/meetings/dda54}{54$^{th}$ Division for Dynamical Astronomy}, contributed talk, MI, USA \hfill May 2023
+  \item FIRE Collaboration Seminar Series, virtual talk$^\dag$ \hfill May 2023
+  \item Stream across simulations workshop, NY, USA \hfill Apr 2023
+  \item \href{https://www.lorentzcenter.nl/towards-real-time-galactic-dynamics.html}{Towards Real-Time Galactic Dynamics}, workshop talk, Leiden, Netherlands \hfill Jul 2022
+  \item \href{https://aas.org/meetings/dda53}{53$^{rd}$ Division for Dynamical Astronomy}, poster, NY, USA \hfill May 2022
+  \item FIRE Collaboration Seminar Series, virtual talk$^\dag$ \hfill Nov 2021
+  \item \href{https://aas.org/meetings/dda52}{52$^{nd}$ Division for Dynamical Astronomy}, contributed talk, Virtual meeting \hfill May 2021
+  \item \href{https://aas.org/meetings/dda51}{51$^{st}$ Division for Dynamical Astronomy}, \textit{attendee}, Virtual meeting \hfill Aug 2020
+  \item Undergraduate Research Symposium, contributed talk, MN, USA \hfill Aug 2018
+  \item Undergraduate Research Symposium, poster, MN, USA \hfill Aug 2016
+\end{itemize}
+
+% \section*{Scientific Talks, Conferences \& Workshops:}
+
+% 27 Total: 8 Invited (denoted by \dag), 3 posters. 15 in North America, 2 in Europe, 1 in Africa\\
+
+% \begin{itemize}
+%   \setlength\itemsep{0.0em}
+%   \renewcommand\labelitemi{$\cdot$}
+
+%     \item University of Washington, Seattle, Astronomy Colloquium, WA, USA$^\dag$ \hfill March 2025
+%     \item University of Alabama, Huntsville, Astronomy Colloquium, AL, USA$^\dag$ \hfill Feb 2025  
+%     \item DESC sprint week, California, USA \hfill Oct 2024
+%     \item IAU General Assembly 2024, research talk, Cape Town, SA \hfill Aug 2024
+%     \item \href{https://events.simonsfoundation.org/event/1f18ba51-d6da-414f-b492-9590f29ad048/summary}{XMC Workshop}, contributed talk, NY, USA \hfill Feb 2024
+%     \item \href{https://aas.org/meetings/aas243}{243$^{rd}$ American Astronomical Society meeting}, dissertation talk, Louisiana, USA \hfill Jan 2024 
+%     \item \href{https://conference.ipac.caltech.edu/milkywaysurveys/}{Surveying the Milky Way}, poster, California, USA \hfill Oct 2023
+%     \item CCA, PACMAN seminar, NY, USA$^\dag$ \hfill Oct 2023
+%     \item MIT Kavli Institute Lunch talk, Boston, MA, USA$^\dag$ \hfill Oct 2023
+%     \item University of Michighan, Astronomy Seminar, MI, USA$^\dag$ \hfill Oct 2023
+%     \item Simulating Beyond CDM workshop, NY, USA \hfill Aug 2023
+%     \item Galactic Frontiers: Dwarf Galaxies in the Local Volume and Beyond, \textit{attendee}, NY, USA \hfill Jul 2023
+%     \item \href{https://agenda.infn.it/event/33897/}{Self Interacting Dark Matter: Models, Simulations and Signals}, workshop talk, Pollica, Italy \hfill Jun 2023
+%     \item DESC stellar stream meeting, virtual talk$^\dag$ \hfill Jun 2023
+%     \item \href{https://aas.org/meetings/dda54}{54$^{th}$ Division for Dynamical Astronomy}, contributed talk, MI, USA \hfill May 2023
+%     \item FIRE Collaboration Seminar Series, virtual talk$^\dag$ \hfill May 2023
+%     \item Stream across simulations workshop, NY, USA \hfill Apr 2023
+%     \item \href{https://www.lorentzcenter.nl/towards-real-time-galactic-dynamics.html}{Towards Real-Time Galactic Dynamics}, workshop talk, Leiden, Netherlands \hfill July 2022
+%     \item N-Body Conference, \textit{attendee}, NY, USA \hfill Jun 2022
+%     \item \href{https://aas.org/meetings/dda53}{53$^{rd}$ Division for Dynamical Astronomy}, poster, NY, USA \hfill May 2022
+%     \item L2G2 Meeting, \textit{attendee}, NY, USA \hfill Nov 2021
+%     \item FIRE Collaboration Seminar Series, virtual talk$^\dag$ \hfill Nov 2021
+%     \item \href{https://aas.org/meetings/dda52}{52$^{nd}$ Division for Dynamical Astronomy}, contributed talk, Virtual meeting \hfill May 2021
+%     \item B-BFE collaboration group meeting, virtual talk \hfill Sep 2020
+%     \item \href{https://aas.org/meetings/dda51}{51$^{st}$ Division for Dynamical Astronomy}, \textit{attendee}, Virtual meeting \hfill Aug 2020
+%     \item Undergraduate Research Symposium, contributed talk, MN, USA \hfill Aug 2018
+%     \item Undergraduate Research Symposium, poster, MN, USA \hfill Aug 2016
+% \end{itemize}
+  
+
+\end{document}
+
+
+
