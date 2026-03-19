@@ -24,6 +24,7 @@ jobs:
         run: |
           mkdir -p docs
           mv main.pdf docs/cv.pdf
+          touch docs/.nojekyll
 
       - name: Commit PDF to docs
         run: |
