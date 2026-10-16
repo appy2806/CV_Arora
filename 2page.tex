@@ -1,0 +1,222 @@
+\documentclass{article}
+\usepackage{enumerate}
+\usepackage[hmargin=2cm,vmargin=2cm]{geometry}
+\usepackage[colorlinks=true]{hyperref}
+\usepackage{url}
+\usepackage{etaremune}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{sectsty}
+\usepackage{ulem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\usepackage{graphicx} % Add this to the preamble for including images
+\usepackage{totcount} % if not already loaded
+
+
+% Define a counter for the number of talks
+\newtotcounter{itemcounter}
+\newtotcounter{talkcount}    % all presentations in this section
+\newtotcounter{invitedcount} % invited subset
+
+\newenvironment{invitedlist}{%
+  \begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+  \let\origitem\item
+  \def\item{\stepcounter{talkcount}\stepcounter{invitedcount}\origitem}%
+}{\end{itemize}}
+
+\newenvironment{contriblist}{%
+  \begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+  \let\origitem\item
+  \def\item{\stepcounter{talkcount}\origitem}%
+}{\end{itemize}}
+
+\newtotcounter{pubcount}       % all publications, either subsection
+\newtotcounter{primarycount}   % primary-author subset
+
+\newenvironment{primarylist}{%
+  \begin{etaremune}
+  \let\origitem\item
+  \def\item{\stepcounter{pubcount}\stepcounter{primarycount}\origitem}%
+}{\end{etaremune}}
+
+\newenvironment{nthauthorlist}{%
+  \begin{etaremune}
+  \let\origitem\item
+  \def\item{\stepcounter{pubcount}\origitem}%
+}{\end{etaremune}}
+
+% Redefine \item to count the number of talks
+\let\olditem\item
+\renewcommand{\item}{\stepcounter{itemcounter}\olditem}
+
+% Command to reset the talk counter
+\newcommand{\resetitemcounter}{\setcounter{itemcounter}{0}}
+% \hypersetup{
+%   colorlinks,
+%   linkcolor={red!50!black},
+%   citecolor={blue!50!black},
+%   urlcolor={SeaGreen!90!black}}
+\definecolor{sectionblue}{RGB}{0,102,153}
+\definecolor{headerblue}{RGB}{75,46,131} % UW Spirit Purple,
+\definecolor{linkgray}{RGB}{80,80,80}      % replaces sectionblue
+
+\hypersetup{
+  colorlinks,
+  linkcolor={red!50!black},
+  citecolor={blue!50!black},
+  urlcolor={linkgray}}
+\sectionfont{\color{headerblue}}
+
+% \pagestyle{fancy}
+% \fancyhf{}
+% \lhead{Arpit Arora}
+% \chead{Curriculum Vitae}
+% \rhead{\thepage}
+% \thispagestyle{empty}
+
+% \fancyfoot[C]{\textit{Last updated: \today}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\color{linkgray}Arpit Arora}
+\chead{\color{linkgray}Curriculum Vitae}
+\rhead{\color{linkgray}\thepage}
+\thispagestyle{empty}
+
+\fancyfoot[C]{\color{linkgray}\textit{Last updated: \today}}
+
+\begin{document}
+
+\begin{center}
+\indent \textbf{\LARGE \textcolor{headerblue}{Arpit Arora -- Curriculum Vitae}} \\
+\indent \textcolor{headerblue}{\rule{17cm}{0.4pt}}\\
+\end{center}
+
+\begin{center}
+{\large
+  Postdoctoral Scholar $|$ \href{https://astro.washington.edu/}{Department of Astronomy},  \href{https://www.washington.edu/}{University of Washington}\\ 
+
+\begin{tabular}{c c c}
+\faGlobe\enspace \href{https://www.arpitarora.space}{arpitarora.space} &
+\faEnvelope\enspace \href{mailto:arora125@uw.edu}{arora125@uw.edu} &
+\faGithub\enspace \href{https://github.com/appy2806}{appy2806}
+\end{tabular}
+} \\
+\vspace{4pt}
+{\textcolor{headerblue}{\textsc{ Galactic Dynamics $\cdot$ Zoom-in Simulations $\cdot$ Stellar Streams $\cdot$ Dark Matter}}}\\
+\vspace{2pt}
+% {\total{pubcount} Publications $\cdot$ \total{invitedcount} Invited Talks $\cdot$ 616 Citations}
+\end{center}
+
+
+\section*{Appointments}
+
+\indent Moore Foundation Postdoctoral Fellow, \href{https://dirac.astro.washington.edu/}{DiRAC/University of Washington} \hfill Sep 2024 -- present
+
+\noindent UW Data Science Postdoctoral Fellow, \href{https://escience.washington.edu/}{eScience Institute, University of Washington} \hfill March 2025 -- present
+
+\section*{Education}
+\textbf{Ph.D.} in Physics and Astronomy, \href{https://www.upenn.edu/}{University of Pennsylvania} \hfill 2019 -- 2024\\
+\indent \textit{Advisor: \href{https://live-sas-physics.pantheon.sas.upenn.edu/people/standing-faculty/robyn-sanderson}{Prof. Robyn Sanderson}}\\
+\indent \textit{Thesis:} \href{https://www.proquest.com/docview/3097956069?sourcetype=Dissertations%20&%20Theses}{Dark matter and disequilibrium at galactic scales}\\
+\textbf{B.S.} in Astrophysics and Physics with highest distinction, \href{https://twin-cities.umn.edu/}{University of Minnesota} \hfill 2015--2019\\
+\indent \textit{Advisor: \href{https://williams.umn.edu/}{Prof. Liliya L. R. Williams}}\\
+\indent \textit{Thesis:} \href{https://iopscience.iop.org/article/10.3847/1538-4357/ab7f2e/meta}{Power-law pseudo-phase-space density profiles of dark matter halos: A Fluke of Physics?}
+
+\section*{Grants \& Funding}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+  \item NSF ACCESS Allocation, PHY250239, PI \hfill 2025\\
+\indent \textit{Simulating disrupted dwarf galaxies in a Milky Way-Mass host. 400K core-hours (\$1,782.80 estimated value).}
+\end{itemize}
+
+\section*{Talks \& Presentations}
+\noindent \textbf{38} presentations total (\textbf{{24}} invited), across 25 in North America, 5 in Europe, 1 in Africa, and 6 virtual.
+
+\subsection*{Recent Invited Seminars}
+\begin{invitedlist}
+  \item University of Minnesota, Astrophysics colloquium, MN, USA \hfill Apr 2027 
+  \item Carnegie Observatories, Astronomy seminar, CA, USA \hfill Dec 2026
+  \item University of California San Diego, Astrophysics seminar, CA, USA \hfill Dec 2026
+  \item University of Virginia, GECO seminar, VA, USA \hfill Oct 2026
+  \item Yale University, Galaxies seminar, CT, USA \hfill Apr 2026
+  \item University of Michigan, Galaxies seminar, MI, USA \hfill Nov 2025  
+  \item Institute of Cosmos Science, University of Barcelona, seminar talk, Barcelona, Spain \hfill Jun 2025
+  \item LIRA, Observatoire de Paris, PSL Seminar talk, Paris, France \hfill Jun 2025
+  \item University of Washington, Seattle, Astronomy colloquium, WA, USA \hfill Mar 2025
+\end{invitedlist}
+
+\section*{Mentoring}
+
+\noindent \textbf{15} students advised or co-advised, including \textbf{5} Ph.D., \textbf{2} postbac, \textbf{5} undergraduate, and \textbf{3} high school.
+\subsection*{Current Graduate Students}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \renewcommand\labelitemi{$\cdot$}
+  \item Lucas Mandacaru Guerra (Graduate student at Princeton University) \hfill Jun 2026 -- present \\ \indent \textit{Advising on one specific Ph.D. project.}
+  \item Jack Kohm (Graduate student at UW) \hfill Oct 2025 -- present \\ \indent \textit{Overall mentoring on Jack's Ph.D. thesis work.}
+  \item Gray Thoron (Graduate student at UW) \hfill Oct 2024 -- present \\ \indent \textit{Overall mentoring on Gray's Ph.D. thesis work.}
+\end{itemize}
+
+\section*{Teaching}
+
+\subsection*{Guest Lectures}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \item \textbf{University of Washington} \\
+        ASTR 102: Introduction to Astronomy \hfill Fall 2025 \\
+        ASTR 511: Galactic Structure and Dynamics \hfill Winter 2025
+  \item \textbf{University of Pennsylvania} \\
+        PHYS 522: Intro to Particle Physics \hfill Spring 2024, 2022 \\
+        PHYS 533: Topics in Cosmology: Galactic Dynamics with Gaia \hfill Spring 2023 \\
+        PHYS 150: Principles of Physics I: Mechanics and Wave Motion \hfill Fall 2020, 2021
+  \item \textbf{University of Minnesota} \\
+        AST 2001: Intro to Modern Astrophysics \hfill Spring 2018, 2019\\
+        PHY 1301: Physics I for Science \& Engineering \hfill Fall 2018
+\end{itemize}
+
+\subsection*{Teaching Assistantships}
+\begin{itemize}
+  \setlength\itemsep{0.0em}
+  \item \textbf{University of Pennsylvania} \\
+    PHYS 522: Intro to Particle Physics\hfill Spring 2021, 2022, 2024 \\
+    PHYS 533: Galactic Dynamics with Gaia \hfill Spring 2023 \\
+    PHYS 526: Astrophysical Radiation \hfill Fall 2022 \\
+    PHYS 016: Energy, Oil, \& Global Warming \hfill Fall 2023 \\
+    PHYS 150: Principles of Physics I: Mechanics and Wave Motion \hfill Fall 2020, 2021 \\
+    PHYS 101-102 Laboratory\hfill Summer 2020B, 2021A, 2021B
+  
+  \item \textbf{University of Minnesota} \\
+    PHY 1301: Physics I for Science \& Engineering \hfill Fall 2018, Spring 2019 \\
+    AST 2001: Intro to Modern Astrophysics \hfill Spring 2017, Spring 2018, Spring 2019
+\end{itemize}
+
+\section*{Publications}
+\noindent \href{https://scixplorer.org/search?p=1&q=docs%28library%2FFoo0PCcyQRuwOWcZNDtIlw%29&sort=date+desc&d=astrophysics}{ADS/SciX},
+\href{https://orcid.org/0000-0002-8354-7356}{ORCID},
+\href{https://scholar.google.com/citations?user=sizUVx8AAAAJ&hl=en&oi=ao}{Google Scholar}\\
+\noindent \textbf{29} Total, \textbf{7} First author, \textbf{629} citations (as of \today)
+
+\subsection*{Selected First Author}
+\begin{primarylist}
+\item \textbf{Arora, A.}, Ferguson, P. S., Nibauer, J., Shipp, N., Reddy, V., et. al. 2026. No Stream Left Unscathed: The imprint of a host galaxy. \textit{The Astrophysical Journal}, 1008(1), p.91.
+
+\item \textbf{Arora, A.}, Garavito-Camargo, N., Sanderson, R. E., Weinberg, M. D., Petersen, M. S., et. al., 2025. Shaping the Milky Way: The interplay of mergers and cosmic filaments. \textit{The Astrophysical Journal}, 988(1), p.190.
+
+\item \textbf{Arora, A.}, Garavito-Camargo, N., Sanderson, R. E., Cunningham, E. C., Wetzel, A., Panithanpaisal, N., Barry, M. 2023. LMC-driven anisotropic boosts in stream--subhalo interactions. \textit{The Astrophysical Journal}, 974(2), p.286. 
+
+\item \textbf{Arora, A.}, Sanderson, R.E., Panithanpaisal, N., Cunningham, E. C., Wetzel, A. and Garavito-Camargo, N., 2022. On the stability of tidal streams in action space. \textit{The Astrophysical Journal}, 939(1), p.2. 
+  
+\end{primarylist}
+
+\end{document}
+
+
+
